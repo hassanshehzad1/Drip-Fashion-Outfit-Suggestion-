@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white dark:bg-dark text-gray-900 dark:text-white font-sans antialiased; }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { @apply bg-transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-brand/40 rounded-full; }
+}
+
+@layer utilities {
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .snap-y { scroll-snap-type: y mandatory; }
+  .snap-start { scroll-snap-align: start; }
+  .glass { backdrop-filter: blur(12px); background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); }
+  .glass-dark { backdrop-filter: blur(12px); background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.08); }
+  .text-gradient { background: linear-gradient(135deg, #E91E63, #FF6090); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .card-3d { transform-style: preserve-3d; transition: transform 0.3s ease; }
+  .card-3d:hover { transform: perspective(1000px) rotateY(3deg) rotateX(2deg) scale(1.02); }
+}

@@ -1,0 +1,56 @@
+# --- Operating System Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Node.js / Frontend ---
+node_modules/
+.npm
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+dist/
+build/
+.next/
+.nuxt/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env/
+pip-log.txt
+
+# --- Java / Maven / Gradle ---
+target/
+.gradle/
+build/
+*.class
+
+# --- C++ / C / Rust ---
+/target/
+*.exe
+*.o
+*.obj
+*.out
+
+# --- IDEs and Text Editors ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- Secrets and Environment Variables ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
